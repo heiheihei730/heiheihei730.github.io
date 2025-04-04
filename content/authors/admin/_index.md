@@ -3,7 +3,7 @@
 title: Honghua Chen (陈泓桦)
 
 # Name pronunciation (optional)
-name_pronunciation: xuŋxuɑ tʂʻən
+name_pronunciation: xuŋ　xuɑ　tʂʻən tʂʻənxuŋxuɑ 
 
 # Full name (for SEO)
 first_name: Honghua

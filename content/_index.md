@@ -35,7 +35,7 @@ sections:
       title: '📚 My Research'
       subtitle: ''
       text: |-
-        I apply a range of brain imaging and machine learning techniques to study the neural mechanisms underlying language, speech, and music cognition.
+        I apply a range of brain imaging and machine learning techniques to study the neural mechanisms underlying language, speech, music, and others kinds of advanced or creative cognition.
 
     design:
       columns: '1'

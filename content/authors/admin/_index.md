@@ -47,4 +47,4 @@ interests:
 ---
 ## About Me
 
-Honghua Chen is a Phd student at Zhejiang University. He is interested in Cognitive Neuroscience, Computational Linguistics, and Artificial Intelligence. He is also interested in Psychology.
+I am a Phd student at Zhejiang University under the guidance of [Prof. Nai Ding](https://person.zju.edu.cn/dingnai). I interested in Cognitive Neuroscience, Computational Linguistics, Psychology, and Artificial Intelligence.

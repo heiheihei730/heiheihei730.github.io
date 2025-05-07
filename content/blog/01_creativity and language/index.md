@@ -20,7 +20,7 @@ However, current usage suggests that many people are indeed employing GPT-4 for 
 
 Recently, we has made some attempts to address this question [1](https://heiheihei730.github.io/publication/creativity/). This study developed a creativity evaluation for language models based on the Divergent Association Test (DAT). In psychology, researchers have devised numerous creativity assessments, but many of these tests may not be reliable when applied to models, as the test items might have leaked into the training data. If creativity is assessed purely based on output, models could also generate content by retrieving from their training corpora. These confounding factors make it difficult to discern a model’s true creative capacity. However, some evaluations approach creativity from a more cognitive perspective, measuring it through semantic retrieval flexibility—DAT being one such method [2].  
 
-![screen reader text](fig1.png "caption")
+![screen reader text](fig1.png "The DAT paradigm")
 
 The DAT test requires generating 10 nouns that are as semantically unrelated as possible:  
 
@@ -30,11 +30,11 @@ After obtaining the 10 words, the semantic distance between each pair is calcula
 
 We also experimented with different generation methods: greedy search (selecting the highest-probability word) and top-p sampling (drawing from the top-p probable words). Sampling improved DAT scores for weaker models, but the gains were limited.  
 
-![screen reader text](fig2.png "caption")
+![screen reader text](fig2.png "The DAT score of LLMs")
 
 But are the models truly that impressive? We identified an issue with the DAT test: the measurement of semantic distance relies on word embeddings, which are influenced by word frequency. Plotting word frequency against DAT scores revealed that lower-frequency words correlate with higher DAT scores. GPT-4 and GPT-3.5’s difference mainly lies in GPT-4’s tendency to generate lower-frequency words. After controlling for word frequency, both models still scored above average but only surpassed 61% (GPT-4) and 75% (GPT-3.5) of humans. Notably, previous DAT studies on humans did not regress out word frequency, yet the results still showed high validity and correlation with other creativity tests. This suggests that generating low-frequency words may itself be linked to creativity.  
 
-![screen reader text](fig3.png "caption")
+![screen reader text](fig3.png "The DAT score regressed by word frequency")
 
 The study further explored the models’ generation strategies and the validity of the DAT paradigm (details omitted here). In summary, we proposed a semantic network-based evaluation for large language models’ creativity, finding that state-of-the-art models perform above the human average on DAT tasks. Given the long-standing debates around defining and measuring creativity, our study only examines it from the perspective of semantic network flexibility. It does not conclusively prove that models possess creativity—especially specialized (Pro-C) or eminent (Big-C) creativity seen in only a few individuals. Nevertheless, such flexibility, both behaviorally and neurologically, is closely tied to creativity [3]. Moreover, the fact that a model trained to fit language distributions can step beyond them—following DAT’s instructions to generate unrelated words—is a delightful discovery.
 
